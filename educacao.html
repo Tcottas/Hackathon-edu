@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Educação</title>
+
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-align: justify;
+            font-family: sans-serif;
+            color: aliceblue;
+            text-decoration: none;
+            background-color: rgb(40, 40, 40);
+        }
+
+        body{
+            display: flex;
+        }
+
+
+        h1{
+            color: rgb(255, 239, 91);
+            font-size: 25px;
+            margin: 22px;
+        }
+
+        h2{
+            font-size: 18px;
+            margin: 17px;
+        }
+
+        p{
+            margin: 15px;
+            line-height: 1.3;
+
+        }
+
+        .container{
+            margin: 25px 30px 25px 230px;
+            padding: 2px 15px;
+            border: 1px solid aliceblue;
+            border-radius: 10px;
+        }
+
+        nav.menu-desktop{
+            /* display: none; */
+            position: fixed;
+            margin: 25px 3px;
+            padding: 1px 1.5px;
+            border: 1px solid aliceblue;
+            border-radius: 10px;
+        }
+
+        nav.menu-desktop li{
+            list-style-type: none;
+            padding: 0px;
+            margin: 1px 0;
+        }
+
+        nav.menu-desktop a{
+            display: block;
+            text-decoration: none;
+            background: rgb(67, 67, 67);
+            padding: 4px;
+            border-bottom: 1px solid aliceblue;
+        }
+
+        nav.menu-desktop a.last{
+            border-bottom: none;
+        }
+
+        nav.menu-desktop li.selected{
+            background: rgb(225, 225, 225);
+        }
+
+        nav.menu-desktop a{
+            display: block;
+            text-decoration: none;
+            background: rgb(51, 51, 51);
+            padding: 5px;
+            border-bottom: 1px solid aliceblue;
+        }
+
+        nav.menu-desktop a.last{
+            border-bottom: none;
+        }
+
+
+        nav.menu-desktop a:hover{
+            text-decoration: underline;
+        }
+
+        nav.menu-mobile{
+            display: none;
+            margin: 3px;
+        }
+
+        nav.menu-mobile ul{
+            display: none;
+            position: absolute;
+            left: 10px;
+            z-index: 3;
+            text-align: center;
+            border: 1px solid aliceblue;
+            border-radius: 5px;
+
+        }
+
+        nav.menu-mobile li{
+            list-style-type: none;
+            padding: 0px;
+            margin: 1px 0;
+        }
+
+        nav.menu-mobile a{
+            display: block;
+            text-decoration: none;
+            background: rgb(67, 67, 67);
+            padding: 4px;
+            border-bottom: 1px solid aliceblue;
+        }
+
+        nav.menu-mobile a.last{
+            border-bottom: none;
+        }
+
+        nav.menu-mobile li.selected{
+            background: rgb(225, 225, 225);
+        }
+
+        @media screen and (max-width: 700px){
+            .menu{
+                position: fixed;
+                width: 100%;
+            }
+
+            .menu-mobile{
+                z-index: 103;
+            }
+
+            nav.menu-mobile{
+                display: block;
+                z-index: 103;
+            }
+
+            nav.menu-mobile a{
+                font-size: 20px;
+            }
+
+            nav.menu-desktop{
+                display: none;
+                position: unset;
+            }
+
+            .container{
+            margin: 70px 5px 5px 5px;
+            padding: 2px 15px;
+            border: 1px solid aliceblue;
+            border-radius: 10px;
+        }
+
+        }
+   </style>
+
+    </head>
+
+    <body>
+
+
+    <nav class="menu-desktop">
+        <ul>
+            <li><a href="#1">Adequação Idade</a></li>
+            <li><a href="#2">Evasão Escolar</a></li>
+            <li><a href="#3">Matriculas</a></li>
+            <li><a href="#4">Parcerias e projetos</a></li>
+            <li><a href="#5">Educação e trabalho</a></li>
+            <li><a href="#6">Violência escolar</a></li>
+            <li><a href="#7">Saúde mental</a></li>
+            <li><a href="#8">Letramento digital</a></li>
+            <li><a href="#9">Desinteresse dos estudantes</a></li>
+            <li><a href="#10">Merenda escolar</a></li>
+            <li><a href="#11">Capital humano</a></li>
+            <li><a class="last" href="#12">Inclusão e diversidade</a></li>
+        </ul>
+    </nav>
+    
+    <div class="menu">
+        <nav class="menu-mobile">
+            <h2><i class="fa fa-bars"></i></h2>
+            <ul>
+                <li><a href="#1">Adequação Idade</a></li>
+                <li><a href="#2">Evasão Escolar</a></li>
+                <li><a href="#3">Matriculas</a></li>
+                <li><a href="#4">Parcerias e projetos</a></li>
+                <li><a href="#5">Educação e trabalho</a></li>
+                <li><a href="#6">Violência escolar</a></li>
+                <li><a href="#7">Saúde mental</a></li>
+                <li><a href="#8">Letramento digital</a></li>
+                <li><a href="#9">Desinteresse dos estudantes</a></li>
+                <li><a href="#10">Merenda escolar</a></li>
+                <li><a href="#11">Capital humano</a></li>
+                <li><a class="last" href="#12">Inclusão e diversidade</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="container">
+
+        <h1 id="1">Adequação idade e ano no Ensino Fundamental</h1>
+        <h2>A proporção de alunos que têm dois ou mais anos de idade acima da esperada para o ano em que estão matriculados é alta.</h2>
+        <p>Depois do governo criar o IDEB (Índice de Alfabetização Brasileiro), que direciona verbas para as escolas a partir da quantidade de alunos alfabetizados anualmente, os resultados melhoraram bastante.</p>
+        <p>Estado passa o aluno a qualquer preço, pois no início do <abbr title="Índice de Alfabetização Brasileiro">IDEB</abbr> os professores do Estado eram gratificados por cada aluno não reprovado. Já a rede municipal, aderiu ao IDEB mais tarde, para ajudá-los, foram criádos cursos para professores entender como fazer um plano de ação para diminiur a reprovação dos alunos, e ações para aumentar a alfabetização.</p>
+        <hr>
+
+        <h1 id="2">Evasão Escolar</h1>
+        <h2>O número de jovens com ensino médio concluído até 19 anos é baixo;</h2>
+        <p>A evasão escolar acontece do sexto ao nono ano, os estudantes tem apenas a alfabetização funcional, escrevem o nome, fazer pequenas contas. Eles são colocados no curso EJA (Educação de Jovens e Adultos) para que possam ser competitivos no mercado de trabalho.</p>
+        <p>A partir dos 18 anos os jovens podem fazer CESU, cursos <b>semi-presenciais</b>, em postos de atendimento. Os alunos recebem apostilas, estudam em casa, agendam uma aula na matéria que têm dificuldades. As provas são marcadas à medida que o aluno conclui as apostilas dos respectivos anos. A pandemia ainda agravou o índice de evasão.</p>
+        <hr>
+
+        <h1 id="3">Operacionalização das matrículas</h1>
+        <h2>O volume de trabalho é muito grande e algumas atividades necessárias podem ser automatizadas</h2>
+        <p>Já existe um link para os pais acessarem e preencher os dados do estudante, em seguida, são direcionados para o escola mais próxima de sua residência, assim, os custos de transporte são reduzidos.</p>
+        <p>O processo de matricula já é bastante automatizado na região.</p>
+        <hr>
+
+        <h1 id="4">Parcerias para projetos</h1>
+        <h2>Falta conexão entre instituições de educação, projetos que já são realizados e pessoas que querem colaborar (doação e/ou voluntariado, por exemplo)</h2>
+        <p>Sim, faltam empresas privadas que apoiem as ações educativas nas escolas.</p>
+        <p>Já existem algumas empresas que investem em projetos sociais, pois há isenção no imposto de renda, mas ainda são poucas empresas investindo. A Acelor e MRS são empresas que fazem esses projetos. Ainda falta incentivo governamental para investimento em mais parcerias com educação.</p>
+        <hr>
+
+        <h1 id="5">Interface entre Educação e o mundo do trabalho</h1>
+        <h2>As empresas demandam recorrentemente profissionais e muitas pessoas querem se inserir no mercado de trabalho</h2>
+        <p>Há projetos para menor aprendiz e "primeiro emprego de carteira assinada" mas a comunidade não os procura muitas vezes por não conhecer tais projetos.</p>
+        <hr>
+
+        <h1 id="6">Casos de violência no ambiente escolar</h1>
+        <h2>Há dificuldades no registro, no acolhimento e no acompanhamento de casos de violência no ambiente escolar</h2>
+        <p>Há projetos como Camera Mirim, em que escolas são sorteadas para receber alunos da universidade, efermagem, psicologos, assistentes sociais, para discutir questões sócio políticas, como a saúde mental e violência no ambiente escolar.</p>
+        <p>Há muitas brigas que começam na comunidade e são levadas para dentro das escolas, como diputas de gangue de bairros.</p>
+        <hr>
+
+        <h1 id="7">Saúde mental</h1>
+        <h2>A incidência de doenças como ansiedade, estresse e depressão está aumentando em Instituições de Educação, tanto em profissionais da área, quanto em discentes</h2>
+        <p>A incidência de tais doenças sempre esteve alta, entre professores e alunos. Todos os problemas que ocorrem na sociedade e nas famílias são levados para o ambiente escolar.</p>
+        <hr>
+
+        <h1 id="8">Letramento digital</h1>
+        <h2>Docentes e estudantes não utilizam plenamente as ferramentas tecnológicas para beneficiar o processo educacional (em alguns casos, subutilizam até as básicas, como o Google);</h2>
+        <p>A maioria dos professores tem dificuldades em ensinar os conhecimentos mais básicos do currículo escolar, não sobra tempo para pegar ferramentas digitais.</p>
+        <hr>
+
+        <h1 id="9">Desinteresse dos estudantes</h1>
+        <p>Há um projeto do governo federal que deverá focar nas habilidaes que os alunos mais se identificam, já é feito há anos nos EUA, mas no Brasil ainda está começando.</p>
+        <hr>
+
+        <h1 id="10">Compra de alimentos para a merenda escolar</h1>
+        <h2>O município tem dificuldades para cumprir a lei que diz que 30% do total dos recursos do Programa Nacional de Alimentação Escolar (PNAE) devem ser direcionados à compra direta de produtos da agricultura familiar</h2>
+        <p>Há tabelas em que as escolas descrevem os alimentos que chegam para a merenda. A qualidade não é a melhor devido ao processo de licitação, o qual não favorece a qualidade. Cada ano há um forncedor diferente.</p>
+        <p>Existe um conselho alimentar que é formado por vários pais, responsável por fiscalizar os alimentos.</p>
+        <hr>
+
+        <h1 id="11">Retenção de capital humano</h1>
+        <p>Professores sempre buscas  mercado de trabalho favorável e condizente com a graduação dos docentes, muitos se sentem sub-aproveitados.</p>
+        <hr>
+
+        <h1 id="12">Inclusão e diversidade</h1>
+        <p>Há leis que obrigam empresas e escolas a ter um percentual de deficientes, há professores especializados na escola pública.</p>
+        <p>Exitem grandes dificuldades em se encontrar professores especializados a ensinar alunos com diferentes tipos de deficiência.</p>
+
+    </div>
+
+    <script src="https://kit.fontawesome.com/e7bc86cff2.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script>
+        $('nav.menu-mobile h2').click(function(){
+            $('nav.menu-mobile ul').slideToggle();
+        });
+    </script>
+</body>
+</html>
